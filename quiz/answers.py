@@ -69,6 +69,20 @@ class Answers(Questions):
         This function should receive a string of letters, and return a boolean (True or False) indicating
         if all the letters in the string are uppercase
         """
-        If string == string.upper()
+        return string == string.upper()
 
-        return NotImplemented
+    def both_numbers_are_even(self, number_1, number_2):
+        """
+        This function should receive two numbers, and return a boolean indicating
+        whether they are both even numbers (have a remainder of 0 when divided by 2)
+        """
+
+        return number_1%2 == 0 and number_2%2 == 0
+
+    def only_one_number_is_even(self, number_1, number_2):
+        """
+        This function should receive two numbers, and return a boolean indicating
+        whether only one of them is even
+        """
+
+        return (number_1%2 == 0) != (number_2%2 == 0)

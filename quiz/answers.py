@@ -86,3 +86,13 @@ class Answers(Questions):
         """
 
         return (number_1%2 == 0) != (number_2%2 == 0)
+
+    def make_function_that_returns_object_type(self):
+        """
+        This function should return another new function.
+        The new function should have one parameter, which will receive an object,
+        and should return the type of that object
+        """
+        def type_function(value):
+            return type(value)
+        return type_function

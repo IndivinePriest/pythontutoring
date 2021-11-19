@@ -105,4 +105,4 @@ class Answers(Questions):
         """
         target_list = []
         for value_to_match in target_list:
-            target_list.count(value_to_match)
+            return target_list.count(value_to_match)

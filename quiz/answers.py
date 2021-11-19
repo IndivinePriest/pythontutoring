@@ -96,3 +96,13 @@ class Answers(Questions):
         def type_function(value):
             return type(value)
         return type_function
+
+    def count_matching_list_items(self, target_list, value_to_match):
+        """
+        This function should receive a list and another variable, and return how many times the value
+        of that variable can be found in the list.
+        For example, if target_list is ["k", "e", "k", "w"] and value_to_match is "k", this function should return 2
+        """
+        target_list = []
+        for value_to_match in target_list:
+            target_list.count(value_to_match)
